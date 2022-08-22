@@ -1,0 +1,55 @@
+.block__title
+    text-align: center
+    font-style: normal
+    font-weight: 600
+    font-size: 30px
+    line-height: 37px
+    color: #333333
+    font-family: $main__font
+    padding-top: 120px
+.process__list
+    margin-top: 5em
+    display: grid
+    justify-content: space-between
+    counter-reset: custom
+    list-style: none
+    column-gap: 150px
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+    grid-template-rows: repeat(auto-fill, minmax(100px, 150px))
+    &__item
+        color: #333333
+        font-family: $main__font
+        position: relative
+        margin-left: 12em 
+
+    &__item:before
+        counter-increment: custom
+        content: counter(custom, decimal-leading-zero)
+        font-weight: 300
+        font-size: 50px
+        line-height: 61px
+        position: absolute
+        left: -25%
+        z-index: 1
+    &__item:after
+        content: counter(custom, decimal-leading-zero)
+        font-weight: 300
+        font-size: 50px
+        line-height: 61px
+        position: absolute
+        left: -24.5%
+        top: 0
+        color: #FED100
+        z-index: 0
+
+    .list__title
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
+        line-height: 30px
+        margin-bottom: 1em
+        .list__text
+            font-weight: 400
+            font-size: 16px
+            line-height: 21px
+            width: 60%

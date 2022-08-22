@@ -1,0 +1,478 @@
+.header__bg {
+  background-color: #FED100;
+}
+.header__bg .header__block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  position: relative;
+}
+.header__bg .header__block a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+.header__bg .header__block .header__block__logo {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+}
+.header__bg .header__block .nav__menu {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+@media screen and (max-width: 800px) {
+  .header__bg .header__block .nav__menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.header__bg .header__block .nav__menu a {
+  margin-right: 2.5em;
+}
+.header__bg .header__block .header__phone__number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+@media screen and (max-width: 800px) {
+  .header__bg .header__block .header__phone__number {
+    display: none;
+  }
+}
+.header__bg .header__promo__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  align-items: flex-start;
+  padding-top: 4.2em;
+  position: relative;
+  padding-bottom: 80px;
+}
+.header__bg .header__promo__block .header__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 110%;
+  max-width: 60%;
+}
+@media screen and (max-width: 400px) {
+  .header__bg .header__promo__block .header__title {
+    max-width: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 126.9%;
+  }
+}
+.header__bg .header__promo__block .header__subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+.header__bg .header__promo__block .header__button {
+  background: #FF352B;
+  width: 300px;
+  height: 60px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2F2F2;
+  border: none;
+  z-index: 2;
+  cursor: pointer;
+}
+.header__bg .header__promo__block .border__button {
+  border: 2px solid #F2F2F2;
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  top: 56%;
+  right: 77%;
+  z-index: 1;
+}
+.header__bg .header__promo__block .company__pluses {
+  margin-top: 6em;
+  display: flex;
+  justify-content: space-between;
+  width: 36%;
+}
+.header__bg .header__promo__block .company__pluses span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  width: 15%;
+  display: flex;
+}
+.header__bg .header__promo__block .company__pluses span:before {
+  content: url(../img/truck.svg);
+  margin-right: 0.8em;
+}
+.header__bg .header__promo__block .company__pluses span:nth-child(2):before {
+  content: url(../img/calendar.svg);
+}
+.header__bg .header__promo__block .company__pluses span:nth-child(3):before {
+  content: url(../img/coins.svg);
+}
+.header__bg .header__promo__block .delivery__man,
+.header__bg .header__promo__block .truck {
+  position: absolute;
+}
+.header__bg .header__promo__block .truck {
+  left: 68%;
+  top: 20%;
+  z-index: 1;
+}
+@media screen and (max-width: 1300px) {
+  .header__bg .header__promo__block .truck {
+    display: none;
+  }
+}
+.header__bg .header__promo__block .delivery__man {
+  bottom: 0;
+  left: 47%;
+  z-index: 2;
+}
+.header__bg .header__promo__block .header__block__logo {
+  position: absolute;
+  z-index: 3;
+  left: 57%;
+  bottom: 12%;
+  transform: rotate(-6deg);
+}
+
+.block__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 120px;
+}
+
+.process__list {
+  margin-top: 5em;
+  display: grid;
+  justify-content: space-between;
+  counter-reset: custom;
+  list-style: none;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(100px, 150px));
+}
+.process__list__item {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  margin-left: 12em;
+}
+.process__list__item:before {
+  counter-increment: custom;
+  content: counter(custom, decimal-leading-zero);
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 61px;
+  position: absolute;
+  left: -25%;
+  z-index: 1;
+}
+.process__list__item:after {
+  content: counter(custom, decimal-leading-zero);
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 61px;
+  position: absolute;
+  left: -24.5%;
+  top: 0;
+  color: #FED100;
+  z-index: 0;
+}
+.process__list .list__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 1em;
+}
+.process__list .list__title .list__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  width: 60%;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+  padding-top: 15px;
+}
+
+.prices__grid {
+  display: grid;
+  width: 100%;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-rows: repeat(auto-fill, 550px);
+  text-align: center;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+  row-gap: 2em;
+  padding-top: 60px;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+.prices__grid .price__card {
+  border: 1px solid #EBEBEB;
+  min-height: 500px;
+  padding-top: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.prices__grid .price__card__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+.prices__grid .price__card span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  margin-top: 2em;
+}
+.prices__grid .price__card .price {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 2em;
+}
+.prices__grid .price__card .price__button {
+  background: #FED100;
+  width: 250px;
+  height: 50px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 2.5em;
+}
+.prices__grid .price__card:nth-child(2) {
+  border-color: #FED100;
+}
+
+.auto__park__block {
+  padding-top: 3em;
+}
+.auto__park__block .car__type {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.auto__park__block .car__type span {
+  border: 1px solid #EBEBEB;
+  display: block;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  padding: 1em;
+  margin-right: 2em;
+}
+.auto__park__block .car__type input {
+  opacity: 0;
+}
+.auto__park__block .car__type input:checked ~ span {
+  border: 1px solid #FED100;
+}
+.auto__park__block .car__description {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3em;
+  width: 85%;
+  margin: 0 auto;
+}
+.auto__park__block .car__description__text {
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 3em;
+}
+.auto__park__block .car__description__text .car__description__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.auto__park__block .car__description__text span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 1.2em;
+}
+.auto__park__block .car__description__text span:before {
+  content: url(../img/checkicon.svg);
+  margin-right: 1em;
+}
+.auto__park__block .car__description__text button {
+  background: #FED100;
+  width: 250px;
+  height: 50px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 2.5em;
+  cursor: pointer;
+}
+
+.reviews__bg {
+  background: #FED100;
+  padding-bottom: 5em;
+}
+.reviews__bg .reviews__row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4em;
+}
+.reviews__bg .reviews__row .reviews__col {
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  width: 27%;
+}
+.reviews__bg .reviews__row .reviews__col .reviews__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 1em;
+}
+.reviews__bg .reviews__row .reviews__col span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 1em;
+}
+.reviews__bg .reviews__row .reviews__col span:after {
+  content: url(../img/starz.png);
+  margin-left: 1em;
+}
+.reviews__bg .reviews__row .reviews__col a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #333333;
+  text-decoration: underline;
+  margin-top: 1em;
+  margin-bottom: 6em;
+}
+.reviews__bg .review__button {
+  display: block;
+  width: 250px;
+  height: 50px;
+  background-color: #FED100;
+  border: 1px solid #333333;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 auto;
+}
+
+.contact__block {
+  width: 75%;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 100px;
+}
+.contact__block .block__title {
+  text-align: start;
+  margin-bottom: 0.5em;
+}
+.contact__block .contact__block__box {
+  display: flex;
+}
+.contact__block .contact__block__box input {
+  width: 300px;
+  height: 3em;
+  margin-top: 2em;
+  border: none;
+  border-bottom: 1px solid #333333;
+  font-size: 18px;
+  margin-right: 2em;
+}
+.contact__block .contact__block__box input:focus {
+  outline: none;
+}
+.contact__block .contact__block__box .button__box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.contact__block .contact__block__box .button__box label {
+  display: flex;
+  justify-content: center;
+}
+.contact__block .contact__block__box .button__box label .checkbox__input {
+  width: auto;
+  margin: 0;
+  margin-left: 1.6em;
+}
+.contact__block .contact__block__box .button__box label span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 1.6em;
+  margin-left: 1em;
+}
+.contact__block .contact__block__box .contact__block__button {
+  background: #FF352B;
+  width: 250px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F2F2F2;
+  border: none;
+  z-index: 6;
+  cursor: pointer;
+  margin-top: 1.9em;
+  margin-left: 1.5em;
+}
+.contact__block .contact__block__box .border__contact__button {
+  width: 250px;
+  height: 50px;
+  border: 1px solid #FED100;
+  position: absolute;
+  right: -3%;
+  top: 35%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,126 @@
+.header__bg
+    background-color: #FED100
+    .header__block
+        display: flex
+        justify-content: space-between
+        padding-top: 40px
+        position: relative
+        a
+            text-decoration: none
+            font-family: $main__font
+            color: #333333
+        .header__block__logo
+            font-style: normal
+            font-weight: 600
+            font-size: 30px
+            line-height: 37px
+        .nav__menu
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 22px
+            +medium
+                display: flex
+                flex-direction: column
+            a
+                margin-right: 2.5em
+        .header__phone__number
+            font-style: normal
+            font-weight: 600
+            font-size: 24px
+            line-height: 29px
+            +medium
+                display: none
+    .header__promo__block
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        font-family: $main__font
+        color: #333333
+        align-items: flex-start
+        padding-top: 4.2em
+        position: relative
+        padding-bottom: 80px
+        .header__title
+            font-weight: 700
+            font-size: 70px
+            line-height: 110%
+            max-width: 60%
+            +small
+                max-width: 100%
+                text-align: center
+                font-size: 28px
+                line-height: 126.9%
+        .header__subtitle
+            font-style: normal
+            font-weight: 600
+            font-size: 30px
+            line-height: 37px
+            margin-top: 0.5em
+            margin-bottom: 2em
+        .header__button
+            background: #FF352B
+            width: 300px
+            height: 60px
+            font-weight: 600
+            font-size: 24px
+            line-height: 29px
+            color: #F2F2F2
+            border: none
+            z-index: 2
+            cursor: pointer
+        .border__button
+            border: 2px solid #F2F2F2
+            width: 300px
+            height: 60px
+            position: absolute
+            top: 56%
+            right: 77%
+            z-index: 1
+        .company__pluses
+            margin-top: 6em
+            display: flex
+            justify-content: space-between
+            width: 36%
+            span
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 21px
+                width: 15% 
+                display: flex
+            span:before
+                content: url(../img/truck.svg)
+                margin-right: 0.8em
+            span:nth-child(2):before
+                content: url(../img/calendar.svg)
+            span:nth-child(3):before
+                content: url(../img/coins.svg)
+        .delivery__man,
+        .truck
+            position: absolute
+        .truck
+            left: 68%
+            top: 20%
+            z-index: 1
+            +large  
+                display: none
+        .delivery__man
+            bottom: 0
+            left: 47%
+            z-index: 2
+        .header__block__logo
+            position: absolute
+            z-index: 3
+            left: 57%
+            bottom: 12% 
+            transform: rotate(-6deg) 
+
+    
+
+
+    
+
+            
+
+        
